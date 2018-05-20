@@ -14,19 +14,19 @@ struct Node
 class Tree
 {
 private:
-	void create(Node *& R, char data[], int i, int n);//´´½¨¶ş²æÊ÷
-	void Release(Node *r);                             //ÊÍ·Å¶ş²æÊ÷
+	void create(Node *& R, char data[], int i, int n);//åˆ›å»ºäºŒå‰æ ‘
+	void Release(Node *r);                             //é‡Šæ”¾äºŒå‰æ ‘
 public:
-	Node * root;                      //¸ù½áµã
-	Tree(char data[], int length);   //¹¹Ôìº¯Êı
-	~Tree();                           //Îö¹¹º¯Êı
-	int depth(Node*r);               //Éî¶È
-	void preorder(Node*r);     //Ç°Ğò
-	void inorder(Node*r);      //ÖĞĞò
-	void levelorder(Node*r);   //²ãĞò
-	void postorder(Node*r);    //ºóĞò
+	Node * root;                      //æ ¹ç»“ç‚¹
+	Tree(char data[], int length);   //æ„é€ å‡½æ•°
+	~Tree();                           //ææ„å‡½æ•°
+	int depth(Node*r);               //æ·±åº¦
+	void preorder(Node*r);     //å‰åº
+	void inorder(Node*r);      //ä¸­åº
+	void levelorder(Node*r);   //å±‚åº
+	void postorder(Node*r);    //ååº
 	void getpath(Node*r, char a, vector<int> &v);
-	//void Tree::getpath(Node*r);      //Ö¸¶¨½áµãµ½¸ùµÄÂ·¾¶
+	//void Tree::getpath(Node*r);      //æŒ‡å®šç»“ç‚¹åˆ°æ ¹çš„è·¯å¾„
 	Node* find(Node*r,char a);
 };
 void  Tree::create(Node *& R, char data[], int i, int n)
